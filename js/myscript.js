@@ -40,23 +40,26 @@ for (let i = 1; i <= 100; i++) {
 
     let number= i;
     const divElement= document.createElement('div')
+    divElement.classList.add('cell');
     
 
     if (i % 3 === 0 && i % 5 === 0) {
 
         console.log('FizzBuzz');
         number="FizzBuzz";
+        divElement.classList.add('fizzbuzz');
 
     } else if (i % 5 === 0) {
 
         console.log("Buzz");
         number="Buzz";
+        divElement.classList.add('buzz');
 
     } else if (i % 3 === 0) {
 
         console.log("Fizz");
         number="Fizz";
-
+        divElement.classList.add('fizz');
     } else {
 
         console.log(i);
